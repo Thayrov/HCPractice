@@ -5,16 +5,21 @@
   No comentar la funcion 
 */
 function soloNumeros(array) {
-  // La funcion llamada 'soloNumeros' recibe como argumento un arreglo de enteros y strings llamado 'array'.
-  // Debe devolver un arreglo con solo los enteros.
-  // Ej: 
-  // soloNumeros([1, 'Henry', 2]) debe retornar [1, 2]
+	// La funcion llamada 'soloNumeros' recibe como argumento un arreglo de enteros y strings llamado 'array'.
+	// Debe devolver un arreglo con solo los enteros.
+	// Ej:
+	// soloNumeros([1, 'Henry', 2]) debe retornar [1, 2]
 
-  // Tu código aca:
-
+	// Tu código aca:
+	let Arr = [];
+	array.forEach(e => {
+		if (typeof e === 'number') {
+			Arr.push(e);
+		}
+	});
+	return Arr;
 }
 
 // No modifiques nada debajo de esta linea //
 
-
-module.exports = soloNumeros
+module.exports = soloNumeros;
